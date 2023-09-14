@@ -1,321 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:fillViewport="true"
+    android:background="@drawable/windowbg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="99999dp"
-        android:layout_height="99999dp"
-        android:background="@drawable/windowbg"
-        android:backgroundTint="#D8202020"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
-
-    <Button
-        android:id="@+id/brightnessBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="700dp"
-        android:layout_height="70dp"
-
-        android:layout_marginTop="70dp"
-        android:background="@drawable/buttonbg"
-        android:backgroundTint="@color/ic_banner_background"
-        android:backgroundTintMode="multiply"
-        android:text="@string/brightness"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:translationX="-2dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/brightnessTxt"
-        android:layout_width="0dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/brightnessDesc"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/app_name"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/brightnessBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/brightnessBtn" />
-
-    <Button
-        android:id="@+id/guardianBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="700dp"
-        android:layout_height="70dp"
-
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buttonbg"
-        android:backgroundTint="@color/ic_banner_background"
-        android:backgroundTintMode="multiply"
-        android:text="@string/guardian"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/brightnessBtn" />
-
-    <TextView
-        android:id="@+id/guardianTxt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/guardianDesc"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@id/guardianBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/guardianBtn" />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/dnsBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
 
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbg"
         android:backgroundTint="@color/ic_banner_background"
         android:backgroundTintMode="multiply"
         android:text="@string/dns"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:translationX="-175dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guardianBtn" />
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/dnsTxt"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="@string/dnsDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="-175dp"
-        app:layout_constraintBottom_toBottomOf="@id/dnsBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/dnsBtn" />
-
-    <Button
-        android:id="@+id/nightlightBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
-
-        android:layout_marginTop="10dp"
-        android:background="@drawable/buttonbg"
-        android:backgroundTint="@color/ic_banner_background"
-        android:backgroundTintMode="multiply"
-        android:text="@string/nightlight"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:translationX="178dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guardianBtn" />
-
-    <TextView
-        android:id="@+id/nightlightTxt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/nightlightDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="178dp"
-        app:layout_constraintBottom_toBottomOf="@id/nightlightBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nightlightBtn" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/datetimeBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
 
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbg"
         android:backgroundTint="@color/ic_banner_background"
         android:backgroundTintMode="multiply"
         android:text="@string/datetime"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:translationX="178dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dnsBtn" />
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/datetimeTxt"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="@string/datetimeDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="178dp"
-        app:layout_constraintBottom_toBottomOf="@id/appsBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/nightlightBtn" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/appsBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
 
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbg"
         android:backgroundTint="@color/ic_banner_background"
         android:backgroundTintMode="multiply"
         android:text="@string/apps"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:translationX="-175dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nightlightBtn" />
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/appsTxt"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="@string/appsDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="-175dp"
-        app:layout_constraintBottom_toBottomOf="@id/appsBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/appsBtn" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/infoBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
 
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbg"
         android:backgroundTint="@color/ic_banner_background"
         android:backgroundTintMode="multiply"
         android:text="@string/info"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:translationX="178dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appsBtn" />
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/infoTxt"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="@string/infoDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="178dp"
-        app:layout_constraintBottom_toBottomOf="@id/infoBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/appsBtn" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/accessiblityBtn"
-        style="@style/OculusButtonStyle"
-        android:layout_width="345dp"
-        android:layout_height="70dp"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
 
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbg"
         android:backgroundTint="@color/ic_banner_background"
         android:backgroundTintMode="multiply"
         android:text="@string/acessibility"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:translationX="-175dp"
-        android:typeface="normal"
-        app:iconSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appsBtn" />
+        android:typeface="normal" />
 
     <TextView
         android:id="@+id/accessibilityTxt"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="@string/acessibilityDesc"
-        android:textColor="#FFFFFF"
-        android:translationX="-175dp"
-        app:layout_constraintBottom_toBottomOf="@id/infoBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/appsBtn" />
+        android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/app_name"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

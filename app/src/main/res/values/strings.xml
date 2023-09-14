@@ -2,28 +2,28 @@
     <string name="app_name">Quest Hidden Settings</string>
     <string name="app_subtitle">Toolbox for Oculus Quest devices</string>
 
-    <string name="brightness">Set Brightness to Minimum\n</string>
+    <string name="brightness">Set Brightness to Minimum</string>
     <string name="brightnessDesc">Sets the screen brightness slightly lower than the slider allows</string>
 
-    <string name="guardian">Open Advanced Guardian Settings\n</string>
+    <string name="guardian">Open Advanced Guardian Settings</string>
     <string name="guardianDesc">Allows for multiple desks and couches, as well as walls</string>
 
-    <string name="dns">Set System Wide Adblock/DNS\n</string>
-    <string name="dnsDesc">Choose from a list of private DNS server</string>
+    <string name="dns">System Wide Adblock/DNS</string>
+    <string name="dnsDesc">Choose from a list of private DNS servers</string>
 
-    <string name="nightlight">Open Blue Light Filter Settings\n</string>
+    <string name="nightlight">Blue Light Filter Settings</string>
     <string name="nightlightDesc">Set blue light filter to run on a schedule</string>
 
-    <string name="datetime">Open Date and Time Settings\n</string>
+    <string name="datetime">Date and Time Settings</string>
     <string name="datetimeDesc">Disable network time to change freely</string>
 
-    <string name="apps">Open App Settings\n</string>
+    <string name="apps">App Settings</string>
     <string name="appsDesc">View and manage installed apps and data</string>
 
-    <string name="acessibility">Extra Accessibility\n</string>
-    <string name="acessibilityDesc">Audio balance/mono and high contrast text</string>
+    <string name="acessibility">Extra Accessibility</string>
+    <string name="acessibilityDesc">Audio balance and text style</string>
 
-    <string name="info">Device Info\n</string>
+    <string name="info">Device Info</string>
     <string name="infoDesc">View device info and set device name</string>
 
 </resources>
