@@ -137,7 +137,7 @@
         android:gravity="center"
         android:text="@string/acessibilityDesc"
         android:textColor="#FFFFFF" />
-
+<!--
         <Button
         android:id="@+id/devBtn"
         android:layout_width="360dp"
@@ -160,5 +160,5 @@
         android:gravity="center"
         android:text="@string/devDesc"
         android:textColor="#FFFFFF" />
-
+-->
 </LinearLayout>
