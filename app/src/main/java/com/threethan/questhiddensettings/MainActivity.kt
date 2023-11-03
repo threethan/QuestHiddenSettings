@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
         accessibilityBtn.setOnClickListener {
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Notice")
+            builder.setTitle("Notice!")
             builder.setMessage(
                 "Many of the settings here don't work.\n"+
                 "You can enable mono audio or adjust balance,\n"+
@@ -88,6 +88,23 @@ class MainActivity : AppCompatActivity() {
             )
             builder.setPositiveButton("Continue") { _, _ ->
                 settingsActivity("AccessibilitySettingsActivity")
+            }
+            builder.setNegativeButton("Cancel") { _, _ -> }
+            builder.create().show()
+        }
+
+        devBtn.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Notice!")
+            builder.setMessage(
+                "Many of the settings in here don't work or could potentially harm your device, \n"+
+                "Do NOT continue unless you know what you are doing. \n"+
+                "Button not working? \n"+
+                "Try going to Device Info and pressing on the build number 10 times.\n\n"+
+                "Use the Quest's developer settings for stuff like unlocking the bootloader."
+            )
+            builder.setPositiveButton("Continue") { _, _ ->
+                settingsActivity("DevelopmentSettingsDashboardActivity")
             }
             builder.setNegativeButton("Cancel") { _, _ -> }
             builder.create().show()
