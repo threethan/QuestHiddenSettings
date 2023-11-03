@@ -8,7 +8,8 @@
         <item name="colorOnPrimary">#ffffff</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">"#212328"</item>
+        <!-- <item name="android:windowBackground">"#212328"</item> -->
+        <item name="android:windowBackground">"#121214"</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
     </style>
