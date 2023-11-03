@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
             builder.setNegativeButton("Cancel") { _, _ -> }
             builder.create().show()
         }
-
+/*
         devBtn.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Notice!")
@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
             builder.setNegativeButton("Cancel") { _, _ -> }
             builder.create().show()
         }
-
+*/
         infoBtn.setOnClickListener {
             settingsActivity("MyDeviceInfoActivity")
         }
