@@ -2,9 +2,10 @@
     <!-- Base application theme. -->
     <style name="Theme.Oculus" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#6985E1</item>
+        <!-- <item name="colorPrimary">#6985E1</item>
         <item name="colorPrimaryVariant">#5069BA</item>
-        <item name="colorPrimaryDark">#5069BA</item>
+        <item name="colorPrimaryDark">#5069BA</item> -->
+        <item name="colorPrimary">#024abf</item>
         <item name="colorOnPrimary">#ffffff</item>
 
         <!-- Customize your theme here. -->
