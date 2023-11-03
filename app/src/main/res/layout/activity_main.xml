@@ -138,4 +138,27 @@
         android:text="@string/acessibilityDesc"
         android:textColor="#FFFFFF" />
 
+        <Button
+        android:id="@+id/devBtn"
+        android:layout_width="360dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbg"
+        android:backgroundTint="@color/ic_banner_background"
+        android:backgroundTintMode="multiply"
+        android:text="@string/dev"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/devTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/devDesc"
+        android:textColor="#FFFFFF" />
+
 </LinearLayout>
