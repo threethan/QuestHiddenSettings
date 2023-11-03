@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         dnsBtn.setOnClickListener {
             val items = arrayOf<CharSequence>("AdGuard DNS (Blocks Ads, Recommended)", "Cloudflare DNS (Fast)", "Quad9 (Private)", "Google DNS")
-            val hostnames = arrayOf<CharSequence>("dns.adguard.com", "1dot1dot1dot1.cloudflare-dns.com", "dns.google")
+            val hostnames = arrayOf<CharSequence>("dns.adguard-dns.com", "one.one.one.one", "dns11.quad9.net", "dns.google")
 
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Select a DNS provider")
