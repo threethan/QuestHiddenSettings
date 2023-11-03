@@ -25,8 +25,8 @@
 
     <string name="info">Device Info</string>
     <string name="infoDesc">View device info and set device name</string>
-    /*
+    <!--
     <string name="dev">Developer Settings</string>
     <string name="devDesc">Access the developer settings or unlock the bootloader</string>
-    */
+    -->
 </resources>
